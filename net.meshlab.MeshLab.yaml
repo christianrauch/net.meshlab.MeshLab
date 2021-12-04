@@ -8,7 +8,8 @@ rename-icon: meshlab
 # Wayland does not work https://github.com/cnr-isti-vclab/meshlab/issues/738
 finish-args:
   - --share=ipc
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --device=dri
   - --filesystem=/tmp
   - --filesystem=home
